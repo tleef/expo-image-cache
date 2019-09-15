@@ -1,6 +1,6 @@
 {
   "name": "@tleef/expo-image-cache",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/Cache.js",
   "scripts": {
     "build": "tsc",

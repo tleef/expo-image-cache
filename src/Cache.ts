@@ -29,7 +29,7 @@ export default class Cache {
     uri: string,
     options?: FileSystem.DownloadOptions,
     onProgress?: FileSystem.DownloadProgressCallback
-  ) {
+  ): Promise<string> {
     if (!this._entries[uri]) {
       this._entries[uri] = new Entry(this, uri, options);
     }
@@ -41,7 +41,7 @@ export default class Cache {
     });
   }
 
-  async ensureDirectoryAsync() {
+  async ensureDirectoryAsync(): Promise<void> {
     if (this._dirExists) {
       return;
     }
