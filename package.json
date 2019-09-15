@@ -1,0 +1,32 @@
+{
+  "name": "@tleef/expo-image-cache",
+  "version": "1.0.0",
+  "main": "lib/Cache.js",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier \"src/**/*.ts\" --write",
+    "prepare": "yarn build"
+  },
+  "repository": "git+https://github.com/tleef/expo-image-cache.git",
+  "author": "Tom Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tleef/expo-image-cache/issues"
+  },
+  "homepage": "https://github.com/tleef/expo-image-cache#readme",
+  "devDependencies": {
+    "@types/react": "^16.9.2",
+    "@types/react-native": "^0.60.14",
+    "@unimodules/core": "^3.0.2",
+    "@unimodules/react-native-adapter": "^3.0.0",
+    "expo-crypto": "^6.0.0",
+    "expo-file-system": "^6.0.2",
+    "prettier": "^1.18.2",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "expo-crypto": "*",
+    "expo-file-system": "*"
+  }
+}
